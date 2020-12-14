@@ -31,6 +31,8 @@ Gradient descent algorithm simply consists from 5 steps:
 4. Weights are updated with gradient value.
 5. Repeat this until desired iteration is provided.
 
-On the other hand in Stochastic method; Before iteration, data samples randomized. Then each training examples have been scanning through and performing update one by one to related samples. Having done this with parameter ‘k’. Columns are vectorized for ‘Xsto’ and updates multiplied in a moment easily.
+On the other hand in Stochastic method; before iteration, data samples randomized. Then each training examples have been scanning through and performing update one by one to related samples. Having done this with parameter ‘k’. Columns are vectorized for ‘Xsto’ and updates multiplied in a moment easily.
+
 Taking samples from dataset in each iteration and calculating weights is another way to boost up speed. Although algorithm is not written in vectorized form, execution speed remarkably increased. This method is called Mini-batch gradient descent. Here it is started with, randomizing batches in iteration loop. Point in here is to use different set of data in each iteration. Then with ‘Data_Points’ array, range of batch is set. Here vectorized form is selected again, speed is significantly increased with that way but results are more unreliable.
+
 After that boundary for classification of training data has taken care with ‘bounDary’ function. And accuracy is printed simply by looking in ‘p’(predicted) for ‘td’ target values. Mean values has taken into consider and printed as percentage. All errors are obtained almost in same way. (td-od)
