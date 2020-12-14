@@ -36,3 +36,8 @@ On the other hand in Stochastic method; before iteration, data samples randomize
 Taking samples from dataset in each iteration and calculating weights is another way to boost up speed. Although algorithm is not written in vectorized form, execution speed remarkably increased. This method is called Mini-batch gradient descent. Here it is started with, randomizing batches in iteration loop. Point in here is to use different set of data in each iteration. Then with ‘Data_Points’ array, range of batch is set. Here vectorized form is selected again, speed is significantly increased with that way but results are more unreliable.
 
 After that boundary for classification of training data has taken care with ‘bounDary’ function. And accuracy is printed simply by looking in ‘p’(predicted) for ‘td’ target values. Mean values has taken into consider and printed as percentage. All errors are obtained almost in same way. (td-od)
+
+# 4. Test Data
+
+In this part, first as it happened in beginning data has been imported. Then again data has been split up into X and td. But for test data, they named ‘X_t’ and ‘td_t’. With same order, distribution has been plotted and visualized(results will in the next part). X_t is padded for bias. Data is tested with updated weights. Classification boundary is drawn. Accuracy for test data is printed same as it happen in training data.
+
